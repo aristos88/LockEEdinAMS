@@ -19,10 +19,17 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
     padding: 0;
     background-color: red;
     background-image: url("lock.jpg");
-    background-size: 90%;
+    background-size: 40% 40%;
   }
   
 
+}
+
+@media all and (min-width: 769px) {
+  body{
+    background-image: url("background.jpg");
+    background-size: 90% 90%;
+  }
 }
 
 @font-face {
@@ -37,14 +44,15 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
   margin: 0;
   box-sizing: border-box;
 }
-body {
+
+/*body {
   height: 100vh;
   background-image: url("background.jpg");
-  background-size: 100% 100%;
+  background-size: 100% 100%;*/
   /*background-color: black;
   background: linear-gradient(135deg, #c3a3f1, #6414e9);
   background-image: url('background.png');*/
-}
+/*}*/
 
 .container {
   width: 31em; /* 31em */
