@@ -5,7 +5,6 @@ window.onload = function() {
 */
 window.addEventListener("scroll", preventMotion, false);
 window.addEventListener("touchmove", preventMotion, false);
-document.getElementById("scratch").onclick=fireworksON;
 //console.log(window.matchMedia("(max-width: 767px)").matches);
 console.log(isMobile());
 if (isMobile() || isMedia()){
@@ -13,8 +12,12 @@ if (isMobile() || isMedia()){
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundColor = "black";
-  document.body.style.backgroundImage="url(vv.jpg)";
+  document.body.style.backgroundImage="url(lock.jpg)";
   document.getElementsByClassName("footer")[0].style.bottom = "-10px";
+}
+else {
+  document.getElementById("scratch").onclick=fireworksON;
+
 }
 
 function isMobile() {
