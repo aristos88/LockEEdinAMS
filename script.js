@@ -6,6 +6,11 @@ window.onload = function() {
 window.addEventListener("scroll", preventMotion, false);
 window.addEventListener("touchmove", preventMotion, false);
 
+//console.log(window.matchMedia("(max-width: 767px)").matches);
+if (window.matchMedia("(max-width: 767px)").matches){
+  document.body.style.backgroundSize = "50% 50%";
+}
+
 function preventMotion(event)
 {
     window.scrollTo(0, 0);
@@ -81,9 +86,6 @@ const isTouchDevice = () => {
   }
 };
 
-if (isTouchDevice) {
-  document.body.style.backgroundSize = "50% 50%";
-}
 
 //Get left and top of canvas
 let rectLeft = canvas.getBoundingClientRect().left;
