@@ -16,7 +16,6 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
     position: relative;
     margin: 0;
     padding: 0;
-    background-image: url("lock.jpg");
     background-size: 90%;
   }
   
@@ -65,8 +64,8 @@ body {
 .base,
 #scratchImg,
 #scratch {
-  height: 200px;
-  width: 200px;
+  height: 30%; /* 200px */
+  width: 30%;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
