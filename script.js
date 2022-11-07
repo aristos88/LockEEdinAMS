@@ -6,14 +6,19 @@ window.onload = function() {
 window.addEventListener("scroll", preventMotion, false);
 window.addEventListener("touchmove", preventMotion, false);
 
+//console.log(window.matchMedia("(max-width: 767px)").matches);
+console.log(isMobile());
+if (isMobile() || isMedia()){
+  document.body.style.backgroundSize = "80%";
+  document.getElementsByClassName("footer")[0].style.bottom = "-10px";
+}
+
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-//console.log(window.matchMedia("(max-width: 767px)").matches);
-console.log(isMobile());
-if (isMobile()){
-  document.body.style.backgroundSize = "50% 50%";
+function isMedia(){
+  return window.matchMedia("(max-width: 767px)").matches
 }
 
 function preventMotion(event)
