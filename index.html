@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch Card</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/freestyle-script" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="color:white; font-family: Freestyle Script; font-size: 350%;">ELENA & EFTHIMIOS WEDDING</h1>
+    </div>
+    <div class="firework" style="left:15px; display: none;"></div>
+    <div style="float:left; max-width: 25%; padding: 3%;">
+      <!--
+      <p class="text">
+        HAPPY TO ANNOUNCE THIS WITH YOU
+      </p>
+      -->
+      <!--
+      <div>
+        <p style="float: left; width: 35%;"><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p>
+        <h4 style="float: left; width:45%;">LOADING...</h4>
+
+      </div>
+      -->
+      
+      <div class="firework" style="float: left; display:none;"></div>
+      <div class="firework" style="float: left; display:none;"></div>
+      
+    </div>
+    <div class="container" onmouseover="removeScratchImg()">
+      <div class="base">
+        <h4 style="font-family: Freestyle Script; font-weight: 900;">SAVE THE DATE</h4>
+        <h3 style="font-family: Freestyle Script;">12 NOV 2023</h3>
+      </div>
+      <canvas id="scratch" width="200" height="200" onclick="fireworksON()">
+        <p>scratch</p>
+      </canvas>
+      <img src="scratchhere.jpg" id="scratchImg" width="200" height="200">
+    </div>
+    
+    <div style="float:right; max-width: 25%; padding: 3%;">
+      <!--
+      <p class="text">
+        FER'TIS FILES SOU MAZI
+      </p>
+      -->
+      <div class="firework" style="float: right; display:none;"></div>
+      <div class="firework" style="float: right; display:none;"></div>
+      
+    </div>
+    <div class="firework" style="left: 1050px; bottom:20px; display: none;"></div>
+    <div style="width: 100%; padding: 5%;">
+      <h2 id="demo" class="footer" ></h2>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
