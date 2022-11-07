@@ -7,29 +7,20 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
 /* For Mobile Phones */
 @media all and (max-width: 768px) {
   html{
-    overflow: -moz-hidden-unscrollable;
-    overscroll-behavior: contain;
+    overflow: hidden;
+    touch-action: none;
   }
 
   body{
-    overflow: -moz-hidden-unscrollable;
-    overscroll-behavior: contain;
+    overflow: hidden;
     position: relative;
     margin: 0;
     padding: 0;
-    background-color: red;
     background-image: url("lock.jpg");
-    background-size: 40% 40%;
+    background-size: 90%;
   }
   
 
-}
-
-@media all and (min-width: 769px) {
-  body{
-    background-image: url("background.jpg");
-    background-size: 90% 90%;
-  }
 }
 
 @font-face {
@@ -45,14 +36,18 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
   box-sizing: border-box;
 }
 
-/*body {
+html{
+  touch-action: none;
+}
+
+body {
   height: 100vh;
   background-image: url("background.jpg");
-  background-size: 100% 100%;*/
+  background-size: 100% 100%;
   /*background-color: black;
   background: linear-gradient(135deg, #c3a3f1, #6414e9);
   background-image: url('background.png');*/
-/*}*/
+}
 
 .container {
   width: 31em; /* 31em */
@@ -67,7 +62,6 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
   border-radius: 0.6em;
   z-index: 900; /* MY ADDITION */
 }
-
 .base,
 #scratchImg,
 #scratch {

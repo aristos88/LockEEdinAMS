@@ -9,20 +9,21 @@ window.addEventListener("touchmove", preventMotion, false);
 function preventMotion(event)
 {
     window.scrollTo(0, 0);
-    event.preventDefault();
+    //event.preventDefault();
     event.stopPropagation();
 }
 
 function removeScratchImg() {
-  document.getElementById("scratchImg").remove();
-  
+  if (document.getElementById("scratchImg")){
+    document.getElementById("scratchImg").remove();
+  } 
   
 }
 
 function fireworksON() {
   //document.body.style.backgroundColor = "black";
-  document.getElementsByClassName("text")[0].style.display = "none";
-  document.getElementsByClassName("text")[1].style.display = "none";
+  /*document.getElementsByClassName("text")[0].style.display = "none";
+  document.getElementsByClassName("text")[1].style.display = "none";*/
   setTimeout("fireworksON2()", 3000);
 }
 
