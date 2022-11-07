@@ -7,22 +7,34 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
 /* For Mobile Phones */
 @media all and (max-width: 768px) {
   html{
-    overflow: hidden;
-    -webkit-overflow-scrolling: none;
-    overscroll-behavior: none;
+    overflow: auto;
+    overscroll-behavior-y: contain;
   }
 
   body{
-    overflow: hidden;
-    -webkit-overflow-scrolling: none;
-    overscroll-behavior: none;
+    overflow: auto;
+    overscroll-behavior-y: contain;
     position: relative;
     margin: 0;
     padding: 0;
     background-image: url("lock.jpg");
     background-size: 90%;
+    height: 80vh;
+    background-size: 80% 80%;
   }
   
+
+}
+
+@media all and (min-width: 769px) {
+  body {
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: 100% 100%;
+    /*background-color: black;
+    background: linear-gradient(135deg, #c3a3f1, #6414e9);
+    background-image: url('background.png');*/
+  }
 
 }
 
@@ -38,14 +50,14 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
   margin: 0;
   box-sizing: border-box;
 }
-body {
+/*body {
   height: 100vh;
   background-image: url("background.jpg");
-  background-size: 100% 100%;
+  background-size: 100% 100%;*/
   /*background-color: black;
   background: linear-gradient(135deg, #c3a3f1, #6414e9);
   background-image: url('background.png');*/
-}
+/*}*/
 
 .container {
   width: 31em; /* 31em */
