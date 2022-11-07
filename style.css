@@ -8,13 +8,19 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
 @media all and (max-width: 768px) {
   html{
     overflow: hidden;
+    -webkit-overflow-scrolling: none;
+    overscroll-behavior: none;
   }
 
   body{
     overflow: hidden;
+    -webkit-overflow-scrolling: none;
+    overscroll-behavior: none;
     position: relative;
     margin: 0;
     padding: 0;
+    background-image: url("lock.jpg");
+    background-size: 90%;
   }
   
 
