@@ -81,6 +81,10 @@ const isTouchDevice = () => {
   }
 };
 
+if (isTouchDevice) {
+  document.body.style.backgroundSize = "50% 50%";
+}
+
 //Get left and top of canvas
 let rectLeft = canvas.getBoundingClientRect().left;
 let rectTop = canvas.getBoundingClientRect().top;

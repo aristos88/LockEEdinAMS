@@ -16,7 +16,6 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
     position: relative;
     margin: 0;
     padding: 0;
-    background-image: url("background.jpg");
     background-size: 90%;
   }
   
@@ -42,7 +41,7 @@ html{
 
 body {
   height: 100vh;
-  /*background-image: url("background.jpg");*/
+  background-image: url("background.jpg");
   background-size: 100% 100%;
   /*background-color: black;
   background: linear-gradient(135deg, #c3a3f1, #6414e9);
@@ -120,7 +119,7 @@ body {
 .footer {
   position: fixed;
   left: 0;
-  bottom: -3%;
+  bottom: -5%;
   width: 100%;
   text-align: center;
   z-index: 800; /* MY ADDITION to be behind the image*/
