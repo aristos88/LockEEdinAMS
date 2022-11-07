@@ -6,8 +6,13 @@ window.onload = function() {
 window.addEventListener("scroll", preventMotion, false);
 window.addEventListener("touchmove", preventMotion, false);
 
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 //console.log(window.matchMedia("(max-width: 767px)").matches);
-if (window.matchMedia("(max-width: 767px)").matches){
+console.log(isMobile());
+if (isMobile()){
   document.body.style.backgroundSize = "50% 50%";
 }
 
