@@ -113,12 +113,13 @@ body {
   /*background: black;*/
   text-align:center; 
   padding: 5px;
+  padding-top:0;
 }
 
 .footer {
   position: fixed;
   left: 0;
-  bottom: -10px;
+  bottom: -5%;
   width: 100%;
   text-align: center;
   z-index: 800; /* MY ADDITION to be behind the image*/
