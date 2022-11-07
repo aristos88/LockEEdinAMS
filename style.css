@@ -13,6 +13,7 @@ https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
   body{
     overflow: hidden;
     position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
