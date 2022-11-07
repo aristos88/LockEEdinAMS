@@ -49,8 +49,8 @@ body {
 }
 
 .container {
-  width: 31em; /* 31em */
-  height: 31em; /* 31em */
+  width: 35%; /* 31em */
+  height: 35%; /* 31em */
   background-color: #f5f5f5;
   background-image: url('test2.png');
   background-size: 100% 100%;
@@ -65,7 +65,7 @@ body {
 #scratchImg,
 #scratch {
   height: 30%; /* 200px */
-  width: 30%;
+  width: 30%; /* 200px */
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
