@@ -1,7 +1,25 @@
 /* 
 https://www.youtube.com/watch?v=XYKyywTf-q8
 https://codingartistweb.com/2022/08/scratch-card-with-javascript/
+https://www.youtube.com/watch?v=OltY8JIaP-4&t=199s
 */
+
+/* For Mobile Phones */
+@media all and (max-width: 768px) {
+  html{
+    overflow: hidden;
+  }
+
+  body{
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+}
+
 @font-face {
   font-family: 'Freestyle Script';
   font-style: normal;
@@ -118,6 +136,8 @@ body {
   background-image: url("scratchhere.jpg");
 }
 */
+
+
 
 /* begining of Fireworks css - just add ' <div class="firework"></div> ' in html*/
 body {
