@@ -6,7 +6,7 @@ window.onload = function() {
 window.addEventListener("scroll", preventMotion, false);
 window.addEventListener("touchmove", preventMotion, false);
 //console.log(window.matchMedia("(max-width: 767px)").matches);
-console.log(isMobile());
+console.log(isMobile() || isMedia());
 if (isMobile() || isMedia()){
   document.body.style.backgroundSize = "cover";
   document.body.style.backgroundPosition = "center";
@@ -16,10 +16,11 @@ if (isMobile() || isMedia()){
   document.getElementsByClassName("footer")[0].style.bottom = "-10px";
   setTimeout("removeScratchImg()", 4000);
 
-  if(window.availHeight < window.availWidth){
+  console.log(screen.availHeight < screen.availWidth);
+  if(screen.availHeight < screen.availWidth){
     //alert("Please use Portrait!");
-    document.getElementsByClassName("header")[0].style.zIndex = "960";
-    document.getElementsByClassName("footer")[0].style.zIndex = "960";
+    //.style.zIndex = "970";
+    document.getElementsByClassName("container")[0].style.zIndex = "-1";
   }
 }
 else {
