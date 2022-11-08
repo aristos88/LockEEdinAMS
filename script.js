@@ -6,6 +6,7 @@ window.onload = function() {
 window.addEventListener("scroll", preventMotion, false);
 window.addEventListener("touchmove", preventMotion, false);
 //console.log(window.matchMedia("(max-width: 767px)").matches);
+document.getElementById("scratch").onclick=fireworksON;
 console.log(isMobile() || isMedia());
 if (isMobile() || isMedia()){
   document.body.style.backgroundSize = "cover";
@@ -26,11 +27,11 @@ if (isMobile() || isMedia()){
     document.getElementsByClassName("footer")[0].style.bottom = "-5px";
   } // problem here as you can't scratch
   */
-}
+}/* 
 else {
   document.getElementById("scratch").onclick=fireworksON;
 
-}
+}*/
 
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
