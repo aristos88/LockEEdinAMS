@@ -14,6 +14,7 @@ if (isMobile() || isMedia()){
   document.body.style.backgroundColor = "black";
   document.body.style.backgroundImage="url(locck4.jpg)";
   document.getElementsByClassName("footer")[0].style.bottom = "-10px";
+  setTimeout("removeScratchImg()", 4000);
 }
 else {
   document.getElementById("scratch").onclick=fireworksON;
