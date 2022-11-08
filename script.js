@@ -15,6 +15,12 @@ if (isMobile() || isMedia()){
   document.body.style.backgroundImage="url(locck4.jpg)";
   document.getElementsByClassName("footer")[0].style.bottom = "-10px";
   setTimeout("removeScratchImg()", 4000);
+
+  if(window.availHeight < window.availWidth){
+    //alert("Please use Portrait!");
+    document.getElementsByClassName("header")[0].style.zIndex = "960";
+    document.getElementsByClassName("footer")[0].style.zIndex = "960";
+  }
 }
 else {
   document.getElementById("scratch").onclick=fireworksON;
