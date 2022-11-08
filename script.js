@@ -16,12 +16,16 @@ if (isMobile() || isMedia()){
   document.getElementsByClassName("footer")[0].style.bottom = "-10px";
   setTimeout("removeScratchImg()", 4000);
 
+  /*
   console.log(screen.availHeight < screen.availWidth);
+  //check if mobile is on landscape, if yes bring text to the front
   if(screen.availHeight < screen.availWidth){
     //alert("Please use Portrait!");
-    //.style.zIndex = "970";
-    document.getElementsByClassName("container")[0].style.zIndex = "-1";
-  }
+    //document.getElementsByClassName("header")[0].style.zIndex = "970";
+    //document.getElementsByClassName("container")[0].style.zIndex = "-1";
+    document.getElementsByClassName("footer")[0].style.bottom = "-5px";
+  } // problem here as you can't scratch
+  */
 }
 else {
   document.getElementById("scratch").onclick=fireworksON;
@@ -58,12 +62,18 @@ function fireworksON() {
 }
 
 function fireworksON2() {
-  document.getElementsByClassName("firework")[0].style.display = "inline";
-  document.getElementsByClassName("firework")[1].style.display = "inline";
-  document.getElementsByClassName("firework")[2].style.display = "inline";
-  document.getElementsByClassName("firework")[3].style.display = "inline";
-  document.getElementsByClassName("firework")[4].style.display = "inline";
-  document.getElementsByClassName("firework")[5].style.display = "inline";
+  console.log(isMobile() || isMedia());
+  if (isMobile() || isMedia()){
+    document.getElementsByClassName("firework")[0].style.display = "inline";
+    document.getElementsByClassName("firework")[1].style.display = "inline";
+  } else{
+    document.getElementsByClassName("firework")[0].style.display = "inline";
+    document.getElementsByClassName("firework")[1].style.display = "inline";
+    document.getElementsByClassName("firework")[2].style.display = "inline";
+    document.getElementsByClassName("firework")[3].style.display = "inline";
+    document.getElementsByClassName("firework")[4].style.display = "inline";
+    document.getElementsByClassName("firework")[5].style.display = "inline";
+  }
 }
 
 let canvas = document.getElementById("scratch");
