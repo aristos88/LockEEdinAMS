@@ -8,11 +8,11 @@ window.addEventListener("touchmove", preventMotion, false);
 //console.log(window.matchMedia("(max-width: 767px)").matches);
 console.log(isMobile());
 if (isMobile() || isMedia()){
-  document.body.style.backgroundSize = "150%";
+  document.body.style.backgroundSize = "cover";
   document.body.style.backgroundPosition = "center";
   document.body.style.backgroundRepeat = "no-repeat";
   document.body.style.backgroundColor = "black";
-  document.body.style.backgroundImage="url(lock.jpg)";
+  document.body.style.backgroundImage="url(locck4.jpg)";
   document.getElementsByClassName("footer")[0].style.bottom = "-10px";
 }
 else {
